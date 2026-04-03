@@ -1,4 +1,4 @@
-platform :ios, '13.0'
+platform :ios, '15.0'
 use_frameworks! :linkage => :static
 #use_modular_headers!
 inhibit_all_warnings!
@@ -6,23 +6,17 @@ install! 'cocoapods',
   :warn_for_unused_master_specs_repo => false,
   :preserve_pod_file_structure => true
 
+source 'git@github.com:igovee/GHSpecs.git'
+source 'https://cdn.cocoapods.org'
 
 target 'GHFirebase_Example' do
 
   pod 'GHFirebase', :path => '../'
   
-  pod 'Firebase/AnalyticsWithoutAdIdSupport', '11.6.0'
-  pod 'Firebase/Crashlytics', '11.6.0'
-  pod 'Firebase/Performance', '11.6.0'
-  pod 'FirebaseABTesting', '11.6.0'
-  pod 'FirebaseCoreExtension', '11.6.0'
-  pod 'FirebaseCoreInternal', '11.6.0'
-  pod 'FirebaseInstallations', '11.6.0'
-  pod 'FirebaseRemoteConfig', '11.6.0'
-  pod 'FirebaseRemoteConfigInterop', '11.6.0'
-  pod 'FirebaseSessions', '11.6.0'
-  pod 'FirebaseSharedSwift', '11.6.0'
-  pod 'GoogleAppMeasurement', '11.6.0'
+  pod 'Firebase/Analytics', '12.11.0'
+  pod 'Firebase/Crashlytics', '12.11.0'
+  pod 'Firebase/Performance', '12.11.0'
+  pod 'Firebase/Auth', '12.11.0'
   
 end
 
