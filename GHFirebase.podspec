@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.author       = 'sy'
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
   
   s.swift_version = '5.0'
 
@@ -24,8 +24,9 @@ Pod::Spec.new do |s|
   #- 推荐这种 -#
   # s.resource_bundles = { 'GHFirebase' => ['GHFirebase/*.xcassets'] }
   
-  s.dependency 'Firebase/AnalyticsWithoutAdIdSupport'
+  s.dependency 'FirebaseAnalytics/Core'
   s.dependency 'Firebase/Crashlytics'
   s.dependency 'Firebase/Performance'
+  s.dependency 'Firebase/Auth'
 
 end
